@@ -5,6 +5,9 @@
 
 # Connect to the testbed
     ssh -i ../testbed/key -p 20XX user@iot.dii.unipi.it
+    
+# Add PANID to the program (and the BR program if needed) in the project-conf.h
+    #define IEEE802154_CONF_PANID 0x00XX
 
 # Flash the program
     make TARGET=nrf52840 BOARD=dongle name-program.dfu-upload PORT=/dev/ttyACMXX
