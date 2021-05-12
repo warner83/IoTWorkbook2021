@@ -9,6 +9,9 @@
 # Flash the program
     make TARGET=nrf52840 BOARD=dongle name-program.dfu-upload PORT=/dev/ttyACMXX
 
+# Get the log
+    make TARGET=nrf52840 BOARD=dongle login PORT=/dev/ttyACMXX
+
 # If needed open another terminal and: (1) flash the border router on another mote and (2) run the connect-router
     make TARGET=nrf52840 BOARD=dongle border-router.dfu-upload PORT=/dev/ttyACMYY
 
